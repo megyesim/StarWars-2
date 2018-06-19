@@ -1,0 +1,135 @@
+body{
+  margin:0;
+  font-size: 18px;
+  color:rgb(34,63,77);  
+}
+ 
+div{
+  position:relative;
+  box-sizing:border-box;  
+  padding: 20px;
+}
+
+.hajo {  
+  position: relative;
+  height: 500px;
+  width: 30%;
+  display: inline-block;
+  border: 1px solid rgb(19, 225, 240);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 10px 5px #aaaaaa;
+  background-color: #ccffcc;
+} 
+
+.hajo:hover {
+  box-shadow: 5px 10px 5px #ee6516;
+}
+
+.hajo:active {
+  box-shadow: 5px 10px 5px #ec45ce;
+}
+
+.also {
+  position: relative;  
+  display: inline-block;
+  border: 1px solid rgb(19, 225, 240);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 10px 5px #aaaaaa;
+  background-color: #ccffcc;
+  width:100%;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+h1 {
+  text-align: center;
+  color:rgb(19, 225, 240);  
+  font-size: 40px; 
+}
+
+.container{
+  width:100%;
+  min-height: 100vh;
+  padding:0;
+}
+
+.container:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.container>div{
+  float: left;
+  height: auto;
+}
+
+.shapceship-list{
+  width: 100%;
+  background:  #0b88c5;
+  overflow: auto
+}
+
+.one-spaceship{
+  width: 100%;
+  background:  #000;
+}
+
+.one-spaceship .hajo{
+  width: 100%;
+  height: 90%;
+}
+
+.searchbar{
+  position: relative;
+}
+
+#search-text,
+#search-button {
+  line-height: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #fae01f;
+}
+
+#search-text {
+ width:150px;
+}
+
+#search-button{
+  background: #fae01f;
+}
+
+#search-button:hover{
+  cursor: pointer;
+}
+
+@media(min-width:1200px){
+  .shapceship-list{
+    width: 75%;
+  }
+
+  .one-spaceship{
+    width: 25%;
+  }
+
+  .container>div{
+    height: 100vh;
+    
+  }
+  
+  .searchbar{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+ 
+}
